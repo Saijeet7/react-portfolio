@@ -14,6 +14,6 @@ const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
   display: grid;
-  grid-template-column: 370px calc(100% - 370px - 100px);
+  grid-template-columns: 370px calc(100% - 370px - 100px);
   gap: 100px;
 `;
