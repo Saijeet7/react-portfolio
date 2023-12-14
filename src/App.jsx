@@ -1,12 +1,10 @@
 import { useState } from "react";
-import Card from "./components/card/Card";
+import Home from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-    <Card/>
+      <Home />
     </>
   );
 }
