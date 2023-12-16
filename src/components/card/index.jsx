@@ -3,7 +3,8 @@ import { CardWrapper } from "./Card.styles";
 import CardTop from "./CardTop";
 import CardImage from "./CardImage";
 import CardContent from "./CardContent";
-import CardContact from './CardContact';
+import CardContact from "./CardContact";
+import CardButton from "./CardButton";
 
 const Card = () => {
   return (
@@ -12,7 +13,8 @@ const Card = () => {
         <CardTop />
         <CardImage />
         <CardContent />
-        <CardContact/>
+        <CardContact />
+        <CardButton />
       </CardWrapper>
     </>
   );
