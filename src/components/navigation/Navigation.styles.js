@@ -6,11 +6,12 @@ export const NavigationWrap = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
+  margin-bottom: 60px;
 `;
 
 export const NavigationLink = styled.div`
     border: 1px solid #ffffff;
-    border-radius: 70px;
+    border-radius: 100%;
     width: 70px;
     height: 70px;
     display: flex;
@@ -20,7 +21,7 @@ export const NavigationLink = styled.div`
     flex-direction: column;
     gap: 5px;
     .icon{
-        height: 20px;
+        height: 15px;
         width: auto;
         color: #ffffff;
     }
