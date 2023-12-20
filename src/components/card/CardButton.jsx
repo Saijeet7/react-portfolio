@@ -7,7 +7,7 @@ const CardButton = () => {
   return (
     <>
       <ContactButtonWrap>
-        <ContactButton href="mailto:saijeet2019@gmail.com">
+        <ContactButton to='./contact'>
           <FontAwesomeIcon icon={faPaperPlane } className="icon" />
           <p>Contact Me</p>
         </ContactButton>

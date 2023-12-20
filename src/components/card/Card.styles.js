@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
@@ -101,7 +102,7 @@ export const ContactButtonWrap = styled.div`
   width: 100%;
 `;
 
-export const ContactButton = styled.a`
+export const ContactButton = styled(Link)`
   color: #ffffff;
   width: 100%;
   font-family: "Roboto", sans-serif;
