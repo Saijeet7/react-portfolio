@@ -1,17 +1,19 @@
 import React from "react";
+import Navigation from "../components/navigation/index";
 import HomeContainer from "../layout/HomeContainer";
 import Card from "../components/card/index";
-import Content from "../components/content/index";
-import Navigation from "../components/navigation/index";
-const Home = () => {
+const Resume = () => {
   return (
     <>
+      <div className="container">
+        <Navigation />
+      </div>
       <HomeContainer>
         <Card />
-        <Content />
+        <div>Resume</div>
       </HomeContainer>
     </>
   );
 };
 
-export default Home;
+export default Resume;

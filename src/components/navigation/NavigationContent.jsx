@@ -12,19 +12,19 @@ const NavigationContent = () => {
   return (
     <>
       <NavigationWrap>
-        <NavigationLink>
+        <NavigationLink to="/">
           <FontAwesomeIcon icon={faHome} className="icon" />
           <p>Home</p>
         </NavigationLink>
-        <NavigationLink>
+        <NavigationLink to="/about">
           <FontAwesomeIcon icon={faUser} className="icon" />
           <p>About</p>
         </NavigationLink>
-        <NavigationLink>
+        <NavigationLink to="/resume">
           <FontAwesomeIcon icon={faFile} className="icon" />
           <p>Resume</p>
         </NavigationLink>
-        <NavigationLink>
+        <NavigationLink to="/project">
           <FontAwesomeIcon icon={faCode} className="icon" />
           <p>Projects</p>
         </NavigationLink>

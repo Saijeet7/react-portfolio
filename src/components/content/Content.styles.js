@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const TopContenWrap = styled.div`
   color: rgba(255, 255, 255, 0.5);
@@ -45,8 +46,9 @@ export const Description = styled.div`
   margin-bottom: 60px;
 `;
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   background-color: #ff6f00;
+  text-decoration: none;
   flex-wrap: wrap;
   display: inline-flex;
   border-radius: 40px;
