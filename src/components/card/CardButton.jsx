@@ -7,7 +7,7 @@ const CardButton = () => {
   return (
     <>
       <ContactButtonWrap>
-        <ContactButton to='./contact'>
+        <ContactButton to='/contact'>
           <FontAwesomeIcon icon={faPaperPlane } className="icon" />
           <p>Contact Me</p>
         </ContactButton>
