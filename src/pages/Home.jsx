@@ -6,9 +6,10 @@ import TopContent from "../components/topContent/TopContent";
 import ContentTitle from "../components/contentTitle/ContentTitle";
 import ContentDescription from "../components/contentDescription/ContentDescription";
 import ContentButton from "../components/contentButton/ContentButton";
+import Footer from "../components/footer/footer";
 const Home = () => {
   const introText =
-    "I design and code beautifully simple things and i love what i do. Just simple like that!";
+    "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
   const title = "I’M SAIJEET UPADHYAY ";
   const subtitle = "Frontend Developer";
 
@@ -27,6 +28,7 @@ const Home = () => {
           <ContentButton />
         </div>
       </HomeContainer>
+      <Footer/>
     </>
   );
 };

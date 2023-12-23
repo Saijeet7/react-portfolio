@@ -5,16 +5,12 @@
 
 body {
   margin: 0;
-  margin-top: 150px;
+  margin-top: 100px;
   font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
   background: #1d1d1d;
-  padding-bottom: 200px;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 50px;
-  }
 }
 
 /* reset.css */
