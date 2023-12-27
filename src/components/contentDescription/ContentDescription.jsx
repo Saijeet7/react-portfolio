@@ -19,4 +19,12 @@ const Description = styled.div`
   font-weight: 400;
   max-width: 600px;
   margin-bottom: 60px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
+  }
 `;

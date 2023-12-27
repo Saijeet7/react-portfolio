@@ -20,4 +20,16 @@ const TopContenWrap = styled.div`
   p {
     max-width: 390px;
   }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+      text-align: center;
+    }
+  }
 `;

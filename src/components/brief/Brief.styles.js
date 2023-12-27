@@ -24,5 +24,16 @@ export const Wrapper = styled.div`
   p {
     opacity: 0.7;
     width: min(100%, 600px);
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    text-align: center;
   }
 `;

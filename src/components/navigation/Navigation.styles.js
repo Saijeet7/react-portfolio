@@ -7,6 +7,14 @@ export const NavigationWrap = styled.div`
   align-items: center;
   gap: 30px;
   margin-bottom: 60px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 `;
 
 export const NavigationLink = styled(NavLink)`
@@ -27,7 +35,9 @@ export const NavigationLink = styled(NavLink)`
     width: auto;
     color: #ffffff;
     transition: all 0.4s ease;
-
+    @media screen and (max-width: 1024px) {
+      height: 10px;
+    }
   }
   p {
     font-family: "Nunito Sans", sans-serif;
@@ -35,6 +45,9 @@ export const NavigationLink = styled(NavLink)`
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
+    @media screen and (max-width: 1024px) {
+      font-size: 0.5rem;
+    }
   }
   &.active {
     border: 1px solid #ff6f00;
@@ -45,7 +58,7 @@ export const NavigationLink = styled(NavLink)`
       color: #ff6f00;
     }
   }
-  &:hover{
+  &:hover {
     border: 1px solid #1983d4;
     p {
       color: #1983d4;
@@ -54,5 +67,9 @@ export const NavigationLink = styled(NavLink)`
       transform: rotate(360deg);
       color: #1983d4;
     }
+  }
+  @media screen and (max-width: 1024px) {
+    width: 50px;
+    height: 50px;
   }
 `;

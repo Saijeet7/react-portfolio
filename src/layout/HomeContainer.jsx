@@ -21,9 +21,12 @@ const Container = styled.div`
   @media screen and (max-width: 1024px) {
     grid-template-columns: 320px calc(100% - 320px - 50px);
     gap: 50px;
+    margin-bottom: 80px;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 50px;
+
   }
 `;

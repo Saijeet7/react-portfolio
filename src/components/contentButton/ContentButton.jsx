@@ -2,18 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight  } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 const ContentButton = () => {
   return (
+    <Wrapper>
     <Button to="/about">
       <span>MORE ABOUT ME</span>{" "}
-      <FontAwesomeIcon icon={faAngleRight } className="icon" />
+      <FontAwesomeIcon icon={faAngleRight} className="icon" />
     </Button>
+    </Wrapper>
   );
 };
 
 export default ContentButton;
- const Button = styled(Link)`
+const Button = styled(Link)`
   background-color: #ff6f00;
   text-decoration: none;
   flex-wrap: wrap;
@@ -36,5 +38,17 @@ export default ContentButton;
   transition: all 0.2s ease-in;
   &:hover {
     background: #1983d4;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;

@@ -3,24 +3,25 @@ import styled from "styled-components";
 const ContentTitle = (props) => {
   return (
     <>
-      <Title>
-        <strong>{props.title}</strong>
-        <br />
-        {props.subtitle}
-      </Title>
+      <Wrapper>
+        <Title>
+          <strong>{props.title}</strong>
+          <br />
+          {props.subtitle}
+        </Title>
+      </Wrapper>
     </>
   );
 };
 
 export default ContentTitle;
- const Title = styled.h1`
+const Title = styled.h1`
   font-family: "Nunito Sans", sans-serif;
   color: #ff6f00;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   text-transform: uppercase;
   max-width: 610px;
   font-weight: 700;
-  width: 100%;
   strong {
     font-size: clamp(2rem, 2.5vw, 3rem);
     font-weight: 700;
@@ -36,5 +37,26 @@ export default ContentTitle;
     top: 25px;
     right: calc(100% + 10px);
   }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+    &:before {
+      width: 20px;
+      top: 20px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 auto 30px auto;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+  }
 `;
 
+const Wrapper = styled.div`
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;

@@ -5,6 +5,12 @@ export const CardWrapper = styled.div`
   padding: 50px 40px 60px 40px;
   border-radius: 40px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  @media screen and (max-width: 1024px) {
+    padding: 40px 30px 50px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 40px 20px;
+  }
 `;
 
 export const CardTopWrap = styled.div`
@@ -19,6 +25,9 @@ export const CardTopWrap = styled.div`
   font-weight: 500;
   p {
     max-width: 72px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
   }
 `;
 
@@ -37,11 +46,17 @@ export const CardMedia = styled.figure`
     height: auto;
     border-radius: 20px;
   }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const CardDescription = styled.div`
   margin-bottom: 32px;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const CardLink = styled.a`
@@ -57,6 +72,9 @@ export const CardLink = styled.a`
   text-decoration: none;
   &:hover {
     color: #ff6f00;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
   }
 `;
 
@@ -77,6 +95,10 @@ export const CardIconWrap = styled.div`
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    gap: 15px;
+  }
 `;
 
 export const CardIconLink = styled.a`
@@ -90,6 +112,11 @@ export const CardIconLink = styled.a`
     &:focus {
       color: #ff6f00;
       transform: scale(1.1);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .icon {
+      width: 20px;
     }
   }
 `;
@@ -125,6 +152,12 @@ export const ContactButton = styled(Link)`
   }
   transition: all 0.2s ease-in;
   &:hover {
-    background: #1983d4;;
+    background: #1983d4;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 15px 20px;
+    .icon {
+      width: 20px;
+    }
   }
 `;

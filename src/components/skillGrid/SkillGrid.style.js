@@ -8,6 +8,14 @@ export const Title = styled.h2`
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 50px;
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -15,6 +23,11 @@ export const Wrapper = styled.div`
   grid-template-columns: repeat(4, 70px);
   gap: 30px;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 50px);
+  }
 `;
 
 export const Media = styled.figure`
