@@ -7,6 +7,7 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import Footer from "../components/footer/footer";
 import Brief from "../components/brief/Brief";
 import KeyInfo from "../components/keyInfo/KeyInfo";
+import SkillGrid from "../components/skillGrid/SkillGrid";
 
 const Resume = () => {
   const introText =
@@ -31,6 +32,7 @@ const Resume = () => {
             description={description}
           />
           <KeyInfo />
+          <SkillGrid />
         </div>
       </HomeContainer>
       <Footer />
