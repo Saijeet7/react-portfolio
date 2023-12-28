@@ -7,6 +7,7 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import ContentDescription from "../components/contentDescription/ContentDescription";
 import ContentButton from "../components/contentButton/ContentButton";
 import Footer from "../components/footer/footer";
+import { FadeAnimation } from "./Page.styles";
 const Home = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
@@ -22,13 +23,15 @@ const Home = () => {
         <Card />
         <div>
           <Navigation />
-          <TopContent text={introText} />
-          <ContentTitle title={title} subtitle={subtitle} />
-          <ContentDescription description={description} />
-          <ContentButton />
+          <FadeAnimation>
+            <TopContent text={introText} />
+            <ContentTitle title={title} subtitle={subtitle} />
+            <ContentDescription description={description} />
+            <ContentButton />
+          </FadeAnimation>
         </div>
       </HomeContainer>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -8,7 +8,7 @@ import Footer from "../components/footer/footer";
 import Brief from "../components/brief/Brief";
 import KeyInfo from "../components/keyInfo/KeyInfo";
 import SkillGrid from "../components/skillGrid/SkillGrid";
-
+import { FadeAnimation } from "./Page.styles";
 const Resume = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
@@ -24,15 +24,17 @@ const Resume = () => {
         <Card />
         <div>
           <Navigation />
-          <TopContent text={introText} />
-          <ContentTitle title={title} />
-          <Brief
-            title={mainTitle}
-            subtitle={subtitle}
-            description={description}
-          />
-          <KeyInfo />
-          <SkillGrid />
+          <FadeAnimation>
+            <TopContent text={introText} />
+            <ContentTitle title={title} />
+            <Brief
+              title={mainTitle}
+              subtitle={subtitle}
+              description={description}
+            />
+            <KeyInfo />
+            <SkillGrid />
+          </FadeAnimation>
         </div>
       </HomeContainer>
       <Footer />

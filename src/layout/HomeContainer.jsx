@@ -24,6 +24,10 @@ const Container = styled.div`
     margin-bottom: 80px;
   }
   @media screen and (max-width: 768px) {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 50px;
