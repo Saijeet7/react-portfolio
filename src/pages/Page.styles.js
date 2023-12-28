@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FadeAnimation = styled.div`
+export const FadeAnimation = styled.section`
   animation: fadeIn 4s;
   -webkit-animation: fadeIn 4s;
   -moz-animation: fadeIn 4s;

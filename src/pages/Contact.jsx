@@ -6,6 +6,7 @@ import TopContent from "../components/topContent/TopContent";
 import ContentTitle from "../components/contentTitle/ContentTitle";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
+import ContactForm from "../components/contactForm/ContactForm";
 
 const Contact = () => {
   const introText =
@@ -21,6 +22,7 @@ const Contact = () => {
           <FadeAnimation>
             <TopContent text={introText} />
             <ContentTitle title={title} />
+            <ContactForm />
           </FadeAnimation>
         </div>
       </HomeContainer>

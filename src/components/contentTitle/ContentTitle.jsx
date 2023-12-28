@@ -26,7 +26,7 @@ const Title = styled.h1`
     font-size: clamp(2rem, 2.5vw, 3rem);
     font-weight: 700;
   }
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
   &:before {
     position: absolute;
@@ -38,7 +38,7 @@ const Title = styled.h1`
     right: calc(100% + 10px);
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     &:before {
       width: 20px;
       top: 20px;
