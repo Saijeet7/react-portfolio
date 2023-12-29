@@ -9,7 +9,6 @@ export const Title = styled.h2`
   line-height: 1;
   margin-bottom: 50px;
   @media screen and (max-width: 1024px) {
-    text-align: center;
     margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) {
