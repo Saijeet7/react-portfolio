@@ -16,7 +16,7 @@ const ContentButton = () => {
 
 export default ContentButton;
 const Button = styled(Link)`
-  background-color: #ff6f00;
+    background: #1983d4;
   text-decoration: none;
   flex-wrap: wrap;
   display: inline-flex;
@@ -37,7 +37,8 @@ const Button = styled(Link)`
   }
   transition: all 0.2s ease-in;
   &:hover {
-    background: #1983d4;
+    background-color: #ff6f00;
+
   }
   @media screen and (max-width: 767px) {
     margin: 0 auto;

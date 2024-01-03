@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.aside`
   padding: 50px 40px 60px 40px;
   border-radius: 40px;
+  position: sticky;
+  top: 50px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   @media screen and (max-width: 1024px) {
     padding: 40px 30px 50px;
@@ -143,7 +145,8 @@ export const ContactButton = styled(Link)`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: #ff6f00;
+
+  background: #1983d4;
   padding: 15px 40px;
   border-radius: 40px;
   .icon {
@@ -153,7 +156,7 @@ export const ContactButton = styled(Link)`
   }
   transition: all 0.2s ease-in;
   &:hover {
-    background: #1983d4;
+    background: #ff6f00;
   }
   @media screen and (max-width: 768px) {
     padding: 15px 20px;
