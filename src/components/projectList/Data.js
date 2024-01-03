@@ -7,11 +7,12 @@ import Blackjack from "../../assets/images/blackjack.png";
 import SneakerNepal from "../../assets/images/sneakernepal.png";
 import Fifa from "../../assets/images/fifa.png";
 import ReactMovie from "../../assets/images/react-movies.png";
+import ThreeJs from "../../assets/images/threejs.png";
 
 export const data = [
   {
     id: 1,
-    title: "React Moves (2021)",
+    title: "React Movies (2021)",
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/React-Movies",
     live: "https://659580761b17e41342e731f1--stellar-jalebi-92ad06.netlify.app/",
@@ -19,6 +20,14 @@ export const data = [
   },
   {
     id: 2,
+    title: "Three JS(2023)",
+    description: "React Js, React Hooks, Three JS, Tailwind",
+    github: "https://github.com/Saijeet7/threejs",
+    live: "https://65958ee61b17e41e55e72f6d--shimmering-begonia-54862d.netlify.app/",
+    img: ThreeJs,
+  },
+  {
+    id: 3,
     title: "Investment Calculator (2023)",
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/investment-calculator-self/",
@@ -26,7 +35,7 @@ export const data = [
     img: Weather,
   },
   {
-    id: 3,
+    id: 4,
     title: " Weather App React (2021",
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/weather-app",
@@ -34,7 +43,7 @@ export const data = [
     img: InvestmentCal,
   },
   {
-    id: 4,
+    id: 5,
     title: "To Do List React (2021)",
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/investment-calculator-self/",
@@ -42,7 +51,7 @@ export const data = [
     img: Todo,
   },
   {
-    id: 5,
+    id: 6,
     title: "Plantmandu Template (2023)",
     description: "HTML, CSS, JS",
     github: "https://github.com/Saijeet7/Plantmandu",
@@ -50,7 +59,7 @@ export const data = [
     img: Plantmandu,
   },
   {
-    id: 6,
+    id: 7,
     title: "TechNepal Template (2022)",
     description: "HTML, CSS, JS",
     github: "https://github.com/Saijeet7/Tech-Nepal",
@@ -58,7 +67,7 @@ export const data = [
     img: TechNepal,
   },
   {
-    id: 7,
+    id: 8,
     title: "Black Jack Using JS(2021)",
     description: "HTML, CSS, JS",
     github: "https://github.com/Saijeet7/Black-Jack",
@@ -66,7 +75,7 @@ export const data = [
     img: Blackjack,
   },
   {
-    id: 8,
+    id: 9,
     title: "Sneaker Nepal React Template(2021)",
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/SneakerNepal",
@@ -74,7 +83,7 @@ export const data = [
     img: SneakerNepal,
   },
   {
-    id: 9,
+    id: 10,
     title: " EDA FIFA19 Playerdata Set (2021)",
     description: "Fifa 19 Data Set Explotory Data Analysis",
     github: "https://github.com/Saijeet7/EDA-FIFA19-Playerdata-Set",
