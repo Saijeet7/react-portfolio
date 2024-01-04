@@ -7,7 +7,7 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
 import ContactForm from "../components/contactForm/ContactForm";
-
+import LightMode from "../components/lightMode/lightMode";
 const Contact = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
@@ -15,6 +15,7 @@ const Contact = () => {
 
   return (
     <>
+      <LightMode />
       <HomeContainer>
         <Card />
         <div>

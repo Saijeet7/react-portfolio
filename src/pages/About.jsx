@@ -7,6 +7,7 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import ContentDescription from "../components/contentDescription/ContentDescription";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
+import LightMode from "../components/lightMode/lightMode";
 const About = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
@@ -16,6 +17,7 @@ const About = () => {
 
   return (
     <>
+      <LightMode />
       <HomeContainer>
         <Card />
         <div>
