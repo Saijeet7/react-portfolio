@@ -16,6 +16,7 @@ const LightMode = ({ toggleTheme, isLightTheme }) => {
         <div className="container">
           <Item onClick={onToggle}>
             <FontAwesomeIcon icon={faLightbulb} className="dark-icon" />
+            <span className="screen-reader-text">Switch Theme mode</span>
           </Item>
         </div>
       </Wrapper>
@@ -27,7 +28,7 @@ export default LightMode;
 
 const Wrapper = styled.div`
   padding: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 40px;
   .container {
     display: flex;
     flex-wrap: wrap;

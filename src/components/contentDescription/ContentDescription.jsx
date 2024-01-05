@@ -13,7 +13,7 @@ const ContentDescription = (props) => {
 
 export default ContentDescription;
 const Description = styled.div`
-  color: rgba(255, 255, 255, 0.7);
+  color: ${({ theme }) => theme.fontColorLight};
   font-family: Roboto;
   font-size: clamp(1.125rem, 2vw, 1.625rem);
   font-weight: 400;

@@ -16,9 +16,11 @@ const ProjectList = () => {
       <IconWrap>
         <IconLink href={data.github} target="_blank">
           <FontAwesomeIcon icon={faGithub} className="icon" />
+          <span className="screen-reader-text">Github Link</span>
         </IconLink>
         <IconLink href={data.live} target="_blank">
           <FontAwesomeIcon icon={faLink} className="icon" />
+          <span className="screen-reader-text">Live Site Link</span>
         </IconLink>
       </IconWrap>
       <ImageWrap>

@@ -8,7 +8,7 @@ import LightMode from "./components/lightMode/lightMode";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./layout/Theme";
+import { BrowserStyle, darkTheme, lightTheme } from "./layout/Theme";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -19,30 +19,21 @@ const App = () => {
   return (
     <>
       <ThemeProvider theme={isLightTheme ? darkTheme : lightTheme}>
-        <LightMode toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
-        <Name color="red">SAIJEET </Name>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-        </BrowserRouter>
+        <BrowserStyle>
+          <LightMode toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/project" element={<Project />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </BrowserRouter>
+        </BrowserStyle>
       </ThemeProvider>
     </>
   );
 };
 
 export default App;
-
-const Name = styled.h1`
-  color: ${(props) => props.theme.fontColor};
-  width: 100%;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-`;
-
-

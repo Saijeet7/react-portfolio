@@ -10,19 +10,19 @@ export const Wrapper = styled.div`
   h2 {
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-family: "Nunito Sans", sans-serif;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     font-weight: 700;
     line-height: .8;
   }
   h3 {
     font-size: clamp(1.125rem, 2.5vw, 2rem);
     font-family: "Nunito Sans", sans-serif;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     font-weight: 500;
     margin-bottom: 10px;
   }
   p {
-    opacity: 0.7;
+    color: ${({ theme }) => theme.fontColorLight};
     width: min(100%, 600px);
     @media screen and (max-width: 768px) {
       max-width: 100%;

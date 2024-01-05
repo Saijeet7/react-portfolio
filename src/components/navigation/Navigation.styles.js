@@ -18,7 +18,7 @@ export const NavigationWrap = styled.div`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  border: 1px solid #ffffff;
+  border: ${({ theme }) => theme.borderColor};
   border-radius: 100%;
   width: 70px;
   height: 70px;
@@ -33,7 +33,7 @@ export const NavigationLink = styled(NavLink)`
   .icon {
     height: 15px;
     width: auto;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     transition: all 0.4s ease;
     @media screen and (max-width: 1024px) {
       height: 10px;
@@ -42,7 +42,7 @@ export const NavigationLink = styled(NavLink)`
   p {
     font-family: "Nunito Sans", sans-serif;
     font-size: 0.75rem;
-    color: #ffffff;
+    color:  ${({ theme }) => theme.fontColor};
     font-weight: 500;
     text-decoration: none;
     @media screen and (max-width: 1024px) {

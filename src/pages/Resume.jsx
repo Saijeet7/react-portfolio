@@ -21,7 +21,6 @@ const Resume = () => {
 
   return (
     <>
-
       <HomeContainer>
         <Card />
         <div>
