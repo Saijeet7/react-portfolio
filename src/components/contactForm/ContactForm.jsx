@@ -49,14 +49,14 @@ const Form = styled.form`
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-    border: 1px solid #ffffff;
+    border: ${({ theme }) => theme.borderColor};
     background: transparent;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     font-family: "Roboto", sans-serif;
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-weight: 400;
     &::placeholder {
-      color: rgba(255, 255, 255, 0.5);
+      color: ${({ theme }) => theme.fontColorLight};
     }
   }
   textarea {
