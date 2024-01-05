@@ -7,7 +7,6 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import ContentDescription from "../components/contentDescription/ContentDescription";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
-
 const About = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";

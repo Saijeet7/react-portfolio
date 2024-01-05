@@ -6,7 +6,7 @@ export const CardWrapper = styled.aside`
   border-radius: 40px;
   position: sticky;
   top: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: ${({ theme }) => theme.borderLight};
   @media screen and (max-width: 1024px) {
     padding: 40px 30px 50px;
   }
@@ -22,7 +22,8 @@ export const CardTopWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.7);
+  color: ${({ theme }) => theme.fontColor};
+  opacity: 0.7;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -37,7 +38,7 @@ export const CardTopWrap = styled.div`
 export const CardTitle = styled.h1`
   font-family: "Nunito Sans", sans-serif;
   font-size: clamp(1.75rem, 2vw, 2.5rem);
-  color: #ffffff;
+  color: ${({ theme }) => theme.fontColor};
   font-weight: 700;
 `;
 
@@ -66,7 +67,7 @@ export const CardLink = styled.a`
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: #ffffff;
+  color: ${({ theme }) => theme.fontColor};
   font-family: "Nunito Sans", sans-serif;
   font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 700;
@@ -82,13 +83,13 @@ export const CardLink = styled.a`
 `;
 
 export const CardAddress = styled.p`
-  color: rgba(255, 255, 255, 0.7);
+  color: ${({ theme }) => theme.fontColor};
+  opacity: 0.7;
   font-family: "Roboto", sans-serif;
   font-size: clamp(1rem, 2vw, 1.275rem);
   font-weight: 700;
   text-align: center;
   width: 100%;
-  color: rgba(255, 255, 255, 0.7);
 `;
 
 export const CardIconWrap = styled.div`
@@ -108,7 +109,7 @@ export const CardIconLink = styled.a`
   .icon {
     width: 34px;
     height: auto;
-    color: white;
+    color: ${({ theme }) => theme.fontColor};
     transition: all 0.2s ease-in;
     &:hover,
     &:active,

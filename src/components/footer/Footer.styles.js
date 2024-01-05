@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
   font-size: 0.875rem;
-  color: #ffffff;
+  color: ${({ theme }) => theme.fontColor};
   opacity: 0.7;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;

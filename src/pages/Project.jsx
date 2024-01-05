@@ -14,18 +14,18 @@ const Project = () => {
   const title = "Projects. ";
   return (
     <>
-      <HomeContainer>
-        <Card />
-        <div>
-          <Navigation />
-          <FadeAnimation>
-            <TopContent text={introText} />
-            <ContentTitle title={title} />
-            <ProjectList />
-          </FadeAnimation>
-        </div>
-      </HomeContainer>
-      <Footer />
+        <HomeContainer>
+          <Card />
+          <div>
+            <Navigation />
+            <FadeAnimation>
+              <TopContent text={introText} />
+              <ContentTitle title={title} />
+              <ProjectList />
+            </FadeAnimation>
+          </div>
+        </HomeContainer>
+        <Footer />
     </>
   );
 };

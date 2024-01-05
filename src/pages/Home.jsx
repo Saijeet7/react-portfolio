@@ -8,6 +8,7 @@ import ContentDescription from "../components/contentDescription/ContentDescript
 import ContentButton from "../components/contentButton/ContentButton";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
+import { BrowserStyle } from "../layout/Theme";
 
 const Home = () => {
   const introText =
@@ -20,7 +21,6 @@ const Home = () => {
 
   return (
     <>
-
       <HomeContainer>
         <Card />
         <div>

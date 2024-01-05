@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  color: #ffffff;
+  color: ${({ theme }) => theme.fontColor};
   font-family: " Roboto", sans-serif;
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 500;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   h2 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-family: "Nunito Sans", sans-serif;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -19,15 +19,13 @@ export const Wrapper = styled.div`
   h3 {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-family: " Roboto", sans-serif;
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColorLight};
     font-weight: 700;
     margin-bottom: 10px;
-    color: rgba(#ffffff, 0.7);
-    
   }
   p {
     width: min(100%, 600px);
-    opacity: 0.7;
+    color: ${({ theme }) => theme.fontColorLight};
     margin-bottom: 30px;
     @media screen and (max-width: 768px) {
       max-width: 100%;
