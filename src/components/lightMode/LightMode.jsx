@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { BrowserStyle } from "../../layout/Theme";
 
-const LightMode = () => {
+const LightMode = ({ toggleTheme, isLightTheme }) => {
+  const [isToggled, setIsToggled] = useState(isLightTheme);
+  const onToggle = () => {
+    setIsToggled(!isToggled);
+    toggleTheme();
+  };
   return (
-    <Wrapper>
-      <div className="container">
-        <Item>
-          <FontAwesomeIcon icon={faLightbulb} className="dark-icon" />
-        </Item>
-      </div>
-    </Wrapper>
+    <BrowserStyle>
+      <Wrapper>
+        <div className="container">
+          <Item onClick={onToggle}>
+            <FontAwesomeIcon icon={faLightbulb} className="dark-icon" />
+          </Item>
+        </div>
+      </Wrapper>
+    </BrowserStyle>
   );
 };
 
@@ -27,17 +35,28 @@ const Wrapper = styled.div`
   }
 `;
 
-const Item = styled.a`
+const Item = styled.button`
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ffffff;
+  border: ${({ theme }) => theme.borderColor};
+  background-color: ${({ theme }) => theme.body};
   border-radius: 100%;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
   .dark-icon {
-    color: #ffffff;
+    color: ${({ theme }) => theme.fontColor};
     height: 20px;
     width: auto;
+    transition: all 0.2s ease-in;
+  }
+  &:hover {
+    border: 1px solid #ff6f00;
+    .dark-icon {
+      transform: scale(1.1);
+      color: #ff6f00;
+    }
   }
 `;

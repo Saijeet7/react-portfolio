@@ -6,7 +6,7 @@ export const CardWrapper = styled.aside`
   border-radius: 40px;
   position: sticky;
   top: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: ${({ theme }) => theme.borderLight};
   @media screen and (max-width: 1024px) {
     padding: 40px 30px 50px;
   }
