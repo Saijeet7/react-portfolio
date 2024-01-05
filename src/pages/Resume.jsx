@@ -9,7 +9,7 @@ import Brief from "../components/brief/Brief";
 import KeyInfo from "../components/keyInfo/KeyInfo";
 import SkillGrid from "../components/skillGrid/SkillGrid";
 import { FadeAnimation } from "./Page.styles";
-import LightMode from "../components/lightMode/lightMode";
+
 const Resume = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
@@ -21,7 +21,7 @@ const Resume = () => {
 
   return (
     <>
-      <LightMode />
+
       <HomeContainer>
         <Card />
         <div>

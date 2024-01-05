@@ -7,14 +7,13 @@ import ContentTitle from "../components/contentTitle/ContentTitle";
 import Footer from "../components/footer/footer";
 import { FadeAnimation } from "./Page.styles";
 import ProjectList from "../components/projectList/ProjectList";
-import LightMode from "../components/lightMode/lightMode";
+
 const Project = () => {
   const introText =
     "I design and code simple things and gym rat chasing aesthetics. Just simple like that!";
   const title = "Projects. ";
   return (
     <>
-      <LightMode />
       <HomeContainer>
         <Card />
         <div>
