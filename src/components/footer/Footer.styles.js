@@ -6,7 +6,7 @@ export const FooterWrap = styled.footer`
   color: ${({ theme }) => theme.fontColor};
   opacity: 0.7;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   width: 100%;
   padding-bottom: 20px;
   strong {

@@ -16,7 +16,7 @@ const ContentTitle = (props) => {
 
 export default ContentTitle;
 const Title = styled.h1`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   color: #ff6f00;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   text-transform: uppercase;

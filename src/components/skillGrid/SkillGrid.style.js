@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
   font-size: clamp(1.5rem, 2.5vw, 2rem);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   color: ${({ theme }) => theme.fontColor};
   font-weight: 700;
   text-transform: uppercase;

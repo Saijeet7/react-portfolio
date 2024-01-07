@@ -5,16 +5,15 @@ import Contact from "./pages/Contact";
 import Project from "./pages/Project";
 import Resume from "./pages/Resume";
 import LightMode from "./components/lightMode/lightMode";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { BrowserStyle, darkTheme, lightTheme } from "./layout/Theme";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
-  const isLightTheme = theme === "light";
+  const isLightTheme = theme === "dark";
   const toggleTheme = () => {
-    setTheme(isLightTheme ? "dark" : "light");
+    setTheme(isLightTheme ? "light" : "dark");
   };
   return (
     <>
