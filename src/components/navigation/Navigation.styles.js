@@ -40,7 +40,7 @@ export const NavigationLink = styled(NavLink)`
     }
   }
   p {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Futura", sans-serif;
     font-size: 0.75rem;
     color:  ${({ theme }) => theme.fontColor};
     font-weight: 500;

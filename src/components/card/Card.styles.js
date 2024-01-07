@@ -36,7 +36,7 @@ export const CardTopWrap = styled.div`
 `;
 
 export const CardTitle = styled.h1`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: clamp(1.75rem, 2vw, 2.5rem);
   color: ${({ theme }) => theme.fontColor};
   font-weight: 700;
@@ -68,7 +68,7 @@ export const CardLink = styled.a`
   text-align: center;
   width: 100%;
   color: ${({ theme }) => theme.fontColor};
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: clamp(1.125rem, 2vw, 1.375rem);
   font-weight: 700;
   margin-bottom: 15px;
