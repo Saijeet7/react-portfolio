@@ -47,8 +47,9 @@ export const CardMedia = styled.figure`
   margin-bottom: 30px;
   img {
     width: 100%;
-    height: auto;
+    height: 345px;
     border-radius: 20px;
+    object-fit: cover;
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;

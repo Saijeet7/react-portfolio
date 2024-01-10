@@ -32,7 +32,7 @@ export const data = [
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/investment-calculator-self/",
     live: "https://saijeet7.github.io/investment-calculator-self/",
-    img: Weather,
+    img: InvestmentCal,
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export const data = [
     description: "React Js, React Hooks, Styled components",
     github: "https://github.com/Saijeet7/weather-app",
     live: "https://saijeet7.github.io/weather-app/",
-    img: InvestmentCal,
+    img: Weather,
   },
   {
     id: 5,

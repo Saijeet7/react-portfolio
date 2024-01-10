@@ -24,7 +24,7 @@ const ProjectList = () => {
         </IconLink>
       </IconWrap>
       <ImageWrap>
-        <img src={data.img} alt="Investment Cal Image" />
+        <img src={data.img} alt="Investment Cal Image" loading="lazy" />
       </ImageWrap>
     </Wrapper>
   ));

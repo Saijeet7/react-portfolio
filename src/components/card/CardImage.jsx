@@ -1,6 +1,6 @@
 import React from "react";
 import { CardMedia } from "./Card.styles";
-import Image from "../../assets/images/portfolio.jpg";
+import Image from "../../assets/images/portfolio.webp";
 
 const CardImage = () => {
   return (
